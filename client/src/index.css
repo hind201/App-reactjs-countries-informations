@@ -1,0 +1,147 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+img {
+   max-width: 100%;
+  
+   
+}
+body{
+  /* padding: 20px; */
+background-color: rgb(216, 216, 216);
+ 
+}
+
+
+/* header */
+.header{
+  display:flex;
+  align-items:center;
+  justify-content: space-around;
+  background-color: yellow;
+  padding: 10px 20px;
+
+
+}
+ button {
+padding: 15px;
+border: none;
+border-radius: 6px;
+
+}
+/* filterPayes */
+.filter{
+  padding: 20px 0;
+  /* background-color:black; */
+  padding: 8px;
+  border-radius: 5px;
+ 
+}
+/* .filterPaye .form-control{
+  width: 100%;
+
+} */
+.filter .form-control input{
+
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 5px;
+  color: rgb(14, 15, 15);
+ width: 100%;
+  height: 50px;
+ }
+
+ .filter .form-control input ::placeholder{
+  color: black;
+}
+ /* filterRegeion */
+ .filter{
+   
+   text-align: center;
+  
+ }
+ .btn{
+   margin-top: 15px;
+   width: 251px;
+   height: 65px;
+ }
+ select{
+   width: 100%;
+   height: 50px;
+ }
+ .gridd{
+  display:grid;
+ 
+  gap:40px;
+  padding: 20px;
+ } 
+ .image img {
+  width: 600px;
+ }
+
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:40px;
+  padding: 20px;
+  
+   }
+   /* .grid article{
+    box-shadow: 0 10px 10px rgba(170, 175, 177, 0.5);
+  } */
+   .grid article img{
+    border-radius:5px 5px 0 0;
+      /* height: 250px;   */
+    
+  }
+   .grid .info{
+     background-color: aquamarine;
+     padding: 40px 20px;
+     margin-top:-40px;
+     border-radius:0 0 5px 5px;
+    
+     
+   }
+   
+   .grid .info h3{
+     padding-bottom: 10px;
+   }
+   .grid .info h4{
+    padding-bottom: 5px;
+  }
+  .grid .details h4{
+   font-weight:300;
+  }
+   @media (min-width:640px){
+    .grid{
+     grid-template-columns:repeat(4,1fr);
+    }
+    .gridd{
+      grid-template-columns: (1fr);
+     }
+  }
+  @media (min-width:768px){
+    .grid{
+     grid-template-columns:repeat(3,1fr);
+    }
+  }
+
+   @media (min-width:992px){
+     /* body{
+       padding:50px 100px
+     } */
+     .filter, .grid{
+     padding: 20px 100px;
+    }
+     
+     .grid{
+      grid-template-columns:repeat(4,1fr);
+      gap:60px
+     }
+     
+   }
